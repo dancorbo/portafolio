@@ -1,0 +1,249 @@
+/* Importa la fuente desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f0f0f0;
+  color: #0f0f0f;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el modo oscuro en el cuerpo de la página */
+body.dark-mode {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+}
+
+/* Estilos específicos para h2 en modo oscuro */
+body.dark-mode h2 {
+  color: #37c095;
+}
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Estilos para el botón de modo oscuro */
+.button-dark-mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el icono dentro del botón de modo oscuro */
+.button-dark-mode i {
+  margin: 0;
+}
+
+/* Estilos generales para íconos */
+.icon,
+.icon-card {
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el efecto hover en iconos de tarjeta */
+.icon-card:hover {
+  background-color: #37c095;
+  color: #f0f0f0;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+/* Contenedor del avatar */
+.avatar-container {
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el avatar */
+.avatar {
+  border-radius: 50%;
+  border: #37c095 3px solid;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Contenido del encabezado */
+.header-content {
+  margin-top: 1rem;
+}
+
+/* Estilos para el título principal del encabezado */
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Estilos para subtítulos */
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Información de contacto */
+.contact-info {
+  margin-top: 1rem;
+}
+
+/* Enlaces en la información de contacto y botón de modo oscuro */
+.contact-info a,
+.button-dark-mode {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  background-color: #37c095;
+  color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover para enlaces de contacto y botón de modo oscuro */
+.contact-info a:hover,
+.button-dark-mode:hover {
+  background-color: #2d5442;
+}
+
+/* Estilo para el divisor personalizado */
+.custom-hr {
+  border: none;
+  height: 2px;
+  background-color: #37c095;
+  margin: 2rem 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Secciones generales (Acerca, Habilidades, Proyectos, Formación, Contacto) */
+.about,
+.skills,
+.projects,
+.training,
+.contact {
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Estilos para los encabezados de secciones (Acerca, Habilidades, Proyectos, Formación, Contacto) */
+.about h2,
+.skills h2,
+.projects h2,
+.training h2,
+.contact h2 {
+  color: #0f0f0f;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Sección de habilidades */
+.skills {
+  text-align: center;
+}
+
+/* Lista de habilidades */
+.skills-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Elementos individuales de la lista de habilidades */
+.skills-list li {
+  background-color: #37c095;
+  color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+/* Tarjetas de proyectos y cursos */
+.project-card,
+.course-card {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Imagen de proyectos */
+.img-project {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Títulos de proyectos y cursos */
+.project-card h3,
+.course-card h3 {
+  color: #3f3f3f;
+  font-size: 1.5rem;
+}
+
+/* Subtítulos de cursos */
+.course-card h4 {
+  color: #4f4f4f;
+}
+
+/* Enlaces de proyectos y cursos */
+.project-card a,
+.course-card a {
+  color: #37c095;
+  text-decoration: none;
+}
+
+/* Sección de contacto */
+.contact {
+  text-align: center;
+}
+
+/* Información de contacto */
+.contact-info {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Enlaces en la sección de contacto */
+.contact-info a {
+  margin: 0.5rem;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #37c095;
+  color: #f0f0f0;
+  position: relative;
+  bottom: 0;
+}
+
+/* Texto en el pie de página */
+footer p {
+  margin: 0;
+}
